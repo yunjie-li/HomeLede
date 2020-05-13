@@ -10,7 +10,11 @@
 name: OpenWrt-CI
 
 on:
-  watch:
+  release:
+    types: published
+  push:
+    branches:
+      - home-lede
     types: started
 
 jobs:
